@@ -78,6 +78,28 @@ app.post('/python', function(req, res, next) {
     })
 })
 
+app.post('/php', function(req, res, next) {
+    var envData = {
+        os: 'linux'
+    }
+    var program = req.body.code
+    var input = req.body.input
+
+    compiler.compilePhpWithInput(envData, program, input, (data)=>{
+        var apiData = {
+            compiler: 'Code Lordz',
+            version: '0.0.1',
+            envData: envData,
+            program: program,
+            input: input,
+            error: data.error,
+            output: data.output
+        }
+        clearTemp()
+        res.send(apiData)
+    })
+})
+
 function clearTemp(){
     compiler.flush(()=>{
         console.log('All temp file cleared')
