@@ -30,8 +30,7 @@ Post Inputs: {
 URL: http://yourdomain.com:3000/javac
 
 Post Inputs: {
-	code : //user code
-	
+	code : //user code	
 	input: //user inputs
 }
 #### Python Program
