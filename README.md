@@ -21,24 +21,29 @@ This is a simple code compiler created using Nodejs. When the source code and in
 Once the server starts running it will listening to the port 3000.  The server can be accessed from http://yourdomain.com:3000
 #### C or CPP Program
 URL: http://yourdomain.com:3000/gcc
+
 Post Inputs: {
 	code : //user code
 	input: //user inputs
 }
 #### Java Program
 URL: http://yourdomain.com:3000/javac
+
 Post Inputs: {
 	code : //user code
+	
 	input: //user inputs
 }
 #### Python Program
 URL: http://yourdomain.com:3000/python
+
 Post Inputs: {
 	code : //user code
 	input: //user inputs
 }
 #### Php Program
 URL: http://yourdomain.com:3000/php
+
 Post Inputs: {
 	code : //user code
 	input: //user inputs
