@@ -9,7 +9,7 @@ This is a simple code compiler created using Nodejs. When the source code and in
 
 ### Installation
 1. Clone our repository from github to a local repository (Folder).
-`git clone https://github.com/satheesh1997/Compile-Engine.git`
+`git clone https://github.com/satheesh1997/node-compileengine.git`
 
 2. Change to Compile-Engine directory.
 `cd Compile-Engine`
@@ -23,29 +23,28 @@ Once the server starts running it will listening to the port 3000.  The server c
 URL: http://yourdomain.com:3000/gcc
 
 Post Inputs: {
-	code : //user code
-	input: //user inputs
+	code : <user_code>,
+	input: <user_input>
 }
 #### Java Program
 URL: http://yourdomain.com:3000/javac
 
 Post Inputs: {
-	code : //user code	
-	input: //user inputs
+	code : <user_code>,
+	input: <user_input>
 }
 #### Python Program
 URL: http://yourdomain.com:3000/python
 
 Post Inputs: {
-	code : //user code
-	input: //user inputs
+	code : <user_code>,
+	input: <user_input>
 }
 #### Php Program
 URL: http://yourdomain.com:3000/php
-
 Post Inputs: {
-	code : //user code
-	input: //user inputs
+	code : <user_code>,
+	input: <user_input>
 }
 ## Response format
 {
